@@ -1,0 +1,42 @@
+@import './assets/scss/variables';
+
+body, div, span, ol, ul, li,
+a, p, img, h1, h2, h3, h4, h5, h6,
+input, textarea {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-weight: 300;
+    color: inherit;
+    box-sizing: border-box;
+    line-height: inherit;
+    vertical-align: middle;
+    letter-spacing: 2px;
+}
+
+html {
+    font-family: "Roboto", "Segoe UI", sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: $black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 2px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+@import './assets/scss/containers';
+@import './assets/scss/shared';
+@import './assets/scss/buttons';

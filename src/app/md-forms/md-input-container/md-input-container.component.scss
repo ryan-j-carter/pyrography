@@ -1,0 +1,65 @@
+@import '../../../assets/scss/variables';
+
+$md-placeholder-height: 1.5rem;
+$md-input-padding-top: 0.25rem;
+$md-input-padding-bottom: 0.35rem;
+
+$md-placeholder-offset: $md-placeholder-height;
+
+.md-focused .md-input-wrapper {
+    .md-input {
+        border-color: $color-primary;
+    }
+    .md-input-placeholder {
+        color: $color-primary-lighter;
+    }
+}
+
+.md-input-wrapper {
+    position: relative;
+    padding-top: $md-placeholder-height;
+
+    .md-input {
+        border-bottom: 1px solid white;
+        transition: border-color 0.2s ease-out;
+        position: relative;
+        z-index: 999;
+
+
+        .md-input-element {
+            background: transparent;
+            color: #aaa;
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 1.1rem;
+            padding-bottom: $md-input-padding-bottom;
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    }
+    .md-input-placeholder-wrapper {
+        .md-input-placeholder {
+            position: absolute;
+            line-height: 1.5;
+            font-size: 1rem;
+            top:$md-input-padding-top;
+            z-index: 1000;
+            transform: translateY($md-placeholder-offset);
+            transition: transform 0.2s ease-out,
+                font-size 0.2s ease-out,
+                color 0.2s ease-out;
+
+            &.md-float:not(.md-empty), .md-focused &.md-float {
+                transform: translateY(0);
+                font-size: 0.875rem;
+            }
+        }
+    }
+}

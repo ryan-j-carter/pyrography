@@ -1,0 +1,15 @@
+<div class="page">
+    <div class="gallery">
+        <div *ngFor="let image of images; let i = index" class="image">
+            <img [src]="baseUrl + image.thumb" (click)="viewImage(i)" />
+        </div>
+    </div>
+</div>
+
+<div class="full-image" *ngIf="showFullImage" (click)="showFullImage = false">
+    <div class="full-image-view" [@scaleIn]>
+        <img [src]="baseUrl + images[selectedImage].full" />
+    </div>
+
+    <div class="full-image-overlay" [@fadeIn]></div>
+</div>

@@ -1,0 +1,13 @@
+<div class="md-input-wrapper">
+    <div class="md-input">
+        <ng-content selector="input, textarea"></ng-content>
+    </div>
+
+    <div class="md-input-placeholder-wrapper">
+        <label class="md-input-placeholder"
+            [class.md-float]="canPlaceholderFloat"
+            [class.md-empty]="mdInputChild.empty">
+            {{mdInputChild.placeholder}}
+        </label>
+    </div>
+</div>

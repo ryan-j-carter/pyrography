@@ -1,0 +1,28 @@
+@import '../../assets/scss/variables';
+
+.contact {
+    max-width: $width-xs;
+    margin: 0 auto;
+
+    .contact-title {
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-description {
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+        text-align:center;
+    }
+
+    .contact-form {
+        margin-bottom: 1.5rem;
+
+        .contact-input {
+            margin-bottom: 0.25rem;
+        }
+    }
+
+    .contact-submit {
+        text-align: center;
+    }
+}

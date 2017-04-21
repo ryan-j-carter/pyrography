@@ -1,0 +1,32 @@
+<div class="header" #header>
+    <!-- START NAV -->
+    <div class="nav" #nav>
+        <h1 class="nav-title">
+            <a class="nav-link"
+               routerLink="/">CODY MORATTO</a>
+        </h1>
+
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="nav-link"
+                   routerLink="/"
+                   routerLinkActive="active"
+                   [routerLinkActiveOptions]="{exact: true}">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   routerLink="/about"
+                   routerLinkActive="active"
+                   [routerLinkActiveOptions]="{exact: true}">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   routerLink="/contact"
+                   routerLinkActive="active"
+                   [routerLinkActiveOptions]="{exact: true}">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- END NAV -->
+    <div class="hr"></div>
+</div>
