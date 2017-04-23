@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "",
+    "baseUrl": "dist/",
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
