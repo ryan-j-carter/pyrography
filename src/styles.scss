@@ -37,6 +37,11 @@ ol, ul {
     list-style: none;
 }
 
+img {
+    width: inherit;
+    height: inherit;
+}
+
 @import './assets/scss/containers';
 @import './assets/scss/shared';
 @import './assets/scss/buttons';

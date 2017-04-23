@@ -1,0 +1,13 @@
+.hr {
+    height: 1px;
+    background-color: $color-primary;
+    max-width: 30%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+@media (min-width: $media-md) {
+    .hr {
+        max-width: $width-md;
+    }
+}
