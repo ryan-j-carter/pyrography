@@ -6,10 +6,11 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "../pyrography-dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "CNAME"
       ],
       "index": "index.html",
       "main": "main.ts",
